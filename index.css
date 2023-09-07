@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+   background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%) no-repeat;
+}
+
+:root{
+    --width:10px;
+    --blur:0px;
+    --bg-color:yellow;
+}
+
+.change-color{
+    color:var(--bg-color);
+}
+
+.main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    padding-bottom:20px;
+}
+
+/* style for range input */
+
+input[type=range]:focus-visible{
+    outline-offset: -10px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    cursor: pointer;
+}
+
+.counters{
+    display: flex;
+    text-align: center;
+    gap: 50px;
+    padding-top:100px;
+}
+
+.center{
+    padding-top: 50px;
+}
+
+.box-div{
+    max-width: 450px;
+    width: 100%;
+    border: var(--width) solid var(--bg-color);
+}
+
+.imgbox{
+    background:url('images/nature.jpeg') no-repeat center center;
+    padding:150px 0 150px 0;
+    filter: blur(var(--blur));
+    -webkit-filter: blur(var(--blur));
+}
