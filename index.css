@@ -58,7 +58,8 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .imgbox{
-    background:url('images/nature.jpeg') no-repeat center center;
+    background:url('https://source.unsplash.com/random/1600x900/?landscape') no-repeat center center;
+    background-size: cover;
     padding:150px 0 150px 0;
     filter: blur(var(--blur));
     -webkit-filter: blur(var(--blur));
